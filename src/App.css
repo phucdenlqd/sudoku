@@ -1,22 +1,97 @@
-.App {
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+.title {
+  text-align: center;
+  color: brown;
+  font-size: 5rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+.table {
+  margin: auto;
+  margin-bottom: 2rem;
+  height: 40rem;
+  width: 40rem;
+  border-collapse: collapse;
+}
+@media screen and (max-width: 480px) {
+  .table {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+.table-row:first-child {
+  border-top: 3px solid brown;
+}
+.table-row:nth-child(3n) {
+  border-bottom: 3px solid brown;
+}
+.table-cell {
+  padding: 0;
+  border: 1px solid brown;
+}
+.table-cell--given input {
+  background-color: #cef1d4;
+}
+.table-cell:nth-child(3n) {
+  border-right: 3px solid brown;
+}
+.table-cell:nth-child(3n + 1) {
+  border-left: 3px solid brown;
+}
+.table-input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 2rem;
+  text-align: center;
+  color: brown;
+}
+@media screen and (max-width: 480px) {
+  .table-input {
+    font-size: 1.5rem;
+  }
+}
+.table-input:focus {
+  outline: 3px solid brown;
+}
+.button-container {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
+.button-container .button {
+  border: 3px solid brown;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: brown;
+  margin: 1rem;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 480px) {
+  .button-container .button {
+    font-size: 1rem;
+    border: 2px solid brown;
+    padding: 0.5rem 1.5rem;
+  }
 }
-
-.App-link {
-  color: #09d3ac;
+.button-container .instructor {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: brown;
+}
+@media screen and (max-width: 480px) {
+  .button-container .instructor {
+    font-size: 1rem;
+  }
 }
