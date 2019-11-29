@@ -91,7 +91,7 @@ class App extends Component{
     })
     // contenu du instructeur
     let instructor = this.state.solved ? "Voici le sudoku résolu. Réessayer?":
-                    this.state.posibility? "Entrer les numéro et puis appuyer le button \"Résoudre\" ":
+                    this.state.posibility? "Entrer les numéros et puis appuyer le bouton \"Résoudre\" ":
                     "Les entrées ne sont pas bonnes. Merci de les verifier"
 
     return(
